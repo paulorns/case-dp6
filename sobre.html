@@ -9,7 +9,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('create', 'UA-12345-6', 'auto');
   ga('send', 'pageview');
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1" >
@@ -89,19 +89,19 @@
 
 <script>
   document.getElementById("nome").addEventListener("change", function(){
-    console.log("nome")
+    ga('send', 'event', 'contato', 'nome', 'preencheu');
   }, false);
 
   document.getElementById("email").addEventListener("change", function(){
-    console.log("email")
+    ga('send', 'event', 'contato', 'email', 'preencheu');
   }, false);
 
   document.getElementById("telefone").addEventListener("change", function(){
-    console.log("telefone")
+    ga('send', 'event', 'contato', 'telefone', 'preencheu');
   }, false);
 
   document.getElementById("aceito").addEventListener("click", function(){
-    console.log("aceito")
+    ga('send', 'event', 'contato', 'aceito', 'preencheu');
   }, false);
 </script>
 

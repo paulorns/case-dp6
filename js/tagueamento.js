@@ -7,30 +7,30 @@
 
 //entre-contato
 function notifContato(){
-  console.log("entre-contato");
+  ga('send', 'event', 'menu', 'entre_em_contato', 'link_externo');
 }
 
 //download-pdf
 function notifDownload(){
-  console.log("download-pdf");
+  ga('send', 'event', 'menu', 'download_pdf', 'download_pdf');
 }
 
 //bt-lorem
 function notifLorem(){
-	console.log("bt-lorem");
+	ga('send', 'event', 'analise', 'ver_mais', 'lorem');
 }
 
 //bt-ipsum
 function notifIpsum(){
-	console.log("bt-ipsum");
+	ga('send', 'event', 'analise', 'ver_mais', 'ipsum');
 }
 
 //bt-dolor
 function notifDolor(){
-	console.log("bt-dolor");
+	ga('send', 'event', 'analise', 'ver_mais', 'dolor');
 }
 
 //enviar
 function notifEnviar(){
-	console.log("enviar");
+	ga('send', 'event', 'contato', 'enviado', 'enviado');
 }
